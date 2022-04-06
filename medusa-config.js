@@ -16,15 +16,6 @@ const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
-  // Uncomment to add Stripe support.
-  // You can create a Stripe account via: https://stripe.com
-  // {
-  //   resolve: `medusa-payment-stripe`,
-  //   options: {
-  //     api_key: STRIPE_API_KEY,
-  //     webhook_secret: STRIPE_WEBHOOK_SECRET,
-  //   },
-  // },
 ];
 
 module.exports = {
